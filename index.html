@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Lesson 16</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">Шапка</header>
+		<main class="main">
+			<div class="summary">
+				<div class="summary__container">
+					<div class="summary__titles">
+						<h2 class="summary__title">Summary</h2>
+						<div class="summary__subtitle">Estimate Shipping and Tax</div>
+						<div class="summary__annotation">Enter your destination to get a shipping estimate.</div>
+					</div>
+					<form action="#">
+						<div class="summar__forms">
+							<label class="summary__label" for="summary-select">Country</label>
+							<select id="summary-select" class="summary__select" name="select">
+								<option value="1" selected>Australia</option>
+								<option value="2">Ukraine</option>
+								<option value="3">Canada</option>
+							</select>
+							<label class="summary__label" for="summary-state">State/Province</label>
+							<input class="summary__input" id="summary-state" name="state" type="text" required>
+							<label class="summary__label" for="summary-zip">Zip/Postal Code</label>
+							<input class="summary__input" id="summary-zip" name="state" type="text" required>
+						</div>
+						<div class="summary__radiobuttons">
+							<h3 class="summary__signature">Standard Rate</h3>
+							<div class="summary__radio-block">
+								<input class="summary__radiobutton" id="radiobutton-1" name="radiobutton" type="radio">
+								<label for="radiobutton-1" class="summary__radio-label">Price may vary depending on the
+									item/destination.
+									Shop Staff will contact you. $21.00</label>
+							</div>
+							<h3 class="summary__signature">Pickup from store</h3>
+							<div class="summary__radio-block">
+								<input class="summary__radiobutton" id="radiobutton-2" name="radiobutton" type="radio">
+								<label for="radiobutton-2" class="summary__radio-label">1234 Street Adress City Address, 1234
+									$0.00</label>
+							</div>
+						</div>
+						<div class="summarry__discount">
+							<div class="summary__subtitle">Apply Discount Code</div>
+							<label class="summary__label" for="code">Enter discount code</label>
+							<input class="summary__code" id="code" name="code" type="text" placeholder="Enter Discount code">
+						</div>
+						<button type="submit" class="summary__button">Apply Discount</button>
+					</form>
+				</div>
+			</div>
+			<div class="customers">
+				<div class="customers__container">
+					<form action="#">
+						<div class="customers__titles">
+							<h2 class="customers__title">Registered Customers</h2>
+							<div class="customers__annotation">If you have an account, sign in with your email address.</div>
+						</div>
+						<div class="customers__inputs">
+							<label class="customers__label" for="customers-email">Email</label>
+							<input class="customers__input" id="customers-email" name="email" type="email" required
+								placeholder="Your Name" autocomplete="off">
+							<label class="customers__label" for="customers-password">Password</label>
+							<input class="customers__input" id="customers-password" name="password" type="password" required
+								placeholder="Your Password">
+						</div>
+						<div class="customers__buttons">
+							<button type="submit" class="customers__button">Sign In</button>
+							<a href="" class="customers__link">Forgot Your Password?</a>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="appointment">
+				<div class="appointment__container">
+					<form action="#">
+						<h2 class="appointment__title">Make an appointment</h2>
+						<div class="appointment__items">
+							<div class="appointment__item">
+								<input class="appointment__input" id="input-1" name="appointment-input-1" type="text" required
+									placeholder="Name" tabindex="1" autocomplete="off">
+							</div>
+							<div class="appointment__item">
+								<input class="appointment__input" id="input-2" name="appointment-input-2" type="email" required
+									placeholder="Email" tabindex="2" autocomplete="off">
+							</div>
+							<div class="appointment__item">
+								<input class="appointment__input" id="input-3" name="appointment-input-3" type="tel" required
+									placeholder="Phone Number" tabindex="3" autocomplete="off">
+							</div>
+							<div class="appointment__item">
+								<select class="appointment__select" name="appointment-select" tabindex="4">
+									<option value="1" selected>Option 1</option>
+									<option value="2">Option 2</option>
+									<option value="3">Option 3</option>
+									<option value="3">Option 4</option>
+								</select>
+							</div>
+							<textarea name="appointment__textarea" class="appointment__textarea" tabindex="5"
+								placeholder="Tell us about your puppers include his/her name"></textarea>
+						</div>
+						<div class="appointment__buttons">
+							<button type="submit" class="appointment__button" tabindex="6">Make an Appointment</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">Подвал</footer>
+	</div>
+</body>
+
+</html>
